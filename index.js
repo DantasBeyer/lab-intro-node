@@ -1,7 +1,9 @@
 class SortedList {
-  constructor(itens,lenght) {
+  constructor() {
+    let list = new SortedList(itens,lenght);
     this.itens = []
-    this.lenght = this.itens.length
+    this.lenght = this.itens.length 
+    
   }
 
   add(item) {
