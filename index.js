@@ -1,5 +1,5 @@
 class SortedList {
-  constructor() {
+  constructor(list) {
     let list = new SortedList(itens,lenght);
     this.itens = []
     this.lenght = this.itens.length 
@@ -21,10 +21,24 @@ class SortedList {
   }
  
 
-  max() {}
+  max(highestValue) {
+    let highestValue = this.itens.max ();
+    if (highestValue == this.itens.length) {
+      true
+    } else {
+      throw new Error('EmptySortedList');
+    }
+  }
 
-  min() {}
-
+  min(lowestValue) {
+    let lowestValue = tihs.intens.min();
+    if (lowestValue == this.itens.length) {
+      true
+    } else {
+      throw new Error('EmptySortedList');
+    }
+  }
+ 
   sum() {}
 
   avg() {}
