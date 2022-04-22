@@ -11,7 +11,15 @@ class SortedList {
     this.itens.sort((a, b) => a - b);
   }
 
-  get(pos) {}
+  get(pos) {
+    let pos = this.itens[2];
+    if ( pos == this.itens.length){
+      true
+    } else {
+      throw new Error('OutOfBounds')
+    }
+  }
+ 
 
   max() {}
 
